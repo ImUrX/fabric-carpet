@@ -25,6 +25,13 @@
     "ServerWorld_tickMixin",
     "ServerChunkManager_tickMixin",
     "ThreadedAnvilChunkStorage_tickMixin",
+    "ChunkTicketManager_tickMixin",
+
+    "ThreadedAnvilChunkStorage_scarpetChunkCreationMixin",
+    "ChunkHolder_scarpetChunkCreationMixin",
+
+    "ChunkTicketManager_spawnChunksMixin",
+    "ServerWorld_spawnChunksMixin",
 
     "MobEntityMixin",
     "ServerWorld_unloadedEntityMixin",
@@ -44,7 +51,8 @@
     "ExperienceOrbEntityMixin",
     "PlayerActionC2SPacketMixin",
     "ServerPlayerEntityMixin",
-    "PlayerManagerMixin",
+    "PlayerManager_coreMixin",
+    "PlayerManager_fakePlayersMixin",
     "RedstoneWireBlockMixin",
     "CarpetBlockMixin",
     "SummonCommandMixin",
@@ -109,7 +117,7 @@
     "EndCityFeatureMixin",
 
     "InfestedBlockMixin",
-    "PlayerEntityMixin",
+    "PlayerEntityMixin_portalDelayMixin",
 
     "PistonBlock_qcMixin",
     "DispenserBlock_qcMixin",
@@ -136,18 +144,24 @@
     "ServerPlayerEntity_scarpetEventMixin",
     "FallingBlockEntity_scarpetEventsMixin",
     "BlockItem_scarpetEventMixin",
+    "PlayerManager_scarpetEventsMixin",
 
     "ChunkTicketManager_scarpetMixin",
-    "ServerChunkManager_scarpetMixin",
     "StatType_scarpetMixin",
     "PointOfInterest_scarpetMixin",
+    "ServerWorld_scarpetEventMixin",
 
 
     "PistonBlock_movableTEMixin",
     "PistonBlockEntity_movableTEMixin",
     "World_movableTEMixin",
     "WorldChunk_movableTEMixin",
-    "PistonHandler_movableTEMixin"
+    "PistonHandler_movableTEMixin",
+    "PlayerEntity_creativeNoClipMixin",
+    "PistonBlockEntity_creativeNoClipMixin",
+    "BlockItem_creativeNoClipMixin",
+    "LivingEntity_creativeFlyMixin"
+
   ],
   "client": [
     "RenderTickCounter_tickSpeedMixin",
@@ -158,7 +172,11 @@
     "InGameHudMixin",
     "PlayerListHudMixin",
     "PistonBlockEntityRenderer_movableTEMixin",
-    "ClientPlayNetworkHandler_smoothClientAnimationsMixin"
+    "ClientPlayNetworkHandler_smoothClientAnimationsMixin",
+    "ClientPlayerEntity_clientCommandMixin",
+    "WorldRenderer_fogOffMixin",
+    "WorldRenderer_creativeNoClipMixin"
+
   ],
   "server": [
     "MinecraftDedicatedServerMixin"
